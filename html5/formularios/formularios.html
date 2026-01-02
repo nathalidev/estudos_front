@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <!-- form  - formulario
+    input - entrada 
+    submit - enviar
+    button - botão -->
+
+    <form action="processa.html">
+        E-mail:
+        <br>
+        <input type="text" name="email" placeholder="Digite seu email">
+
+        <br><br>
+
+        Senha:
+        <br>
+        <input type="password" name="senha" placeholder="Digite sua senha">
+
+        <br><br>
+
+        Comentários:
+        <br>
+        <textarea name="comentarios" placeholder="Deixe seus comentários aqui" ></textarea>
+
+        <input type="submit" value="Entrar">
+
+    </form>
+</body>
+
+<!-- 
+📌 GET vs POST
+
+🌐 GET
+- Dados vão na URL (visíveis).
+- Bom para buscas/filtros.
+- Permite compartilhar links.
+- Inseguro para senhas, tem limite.
+
+🔒 POST
+- Dados vão no corpo da requisição.
+- Não aparecem na URL.
+- Mais seguro (login, senhas, uploads).
+- Suporta grandes quantidades.
+
+🎯 Resumo:
+- GET → público/links.
+- POST → privado/grandes dados.
+-->
+
+<!-- 
+📌 <textarea> vs value
+
+- Em <textarea>, o texto inicial deve ficar ENTRE as tags:
+    <textarea>Texto aqui</textarea>
+  → aparece dentro da caixa.
+
+- O atributo "value" NÃO funciona em <textarea>.
+  Ele serve para <input>, definindo valor inicial ou texto do botão:
+    <input type="text" value="João">
+    <input type="submit" value="Enviar">
+
+🎯 Resumo:
+- Use "value" em <input>.
+- Use texto entre as tags em <textarea>.
+-->
+
+<!-- 
+📌 Submit + Reset
+
+- type="submit" → envia os dados do formulário.
+- type="reset" → apenas limpa os campos.
+- Para fazer os dois juntos, use JavaScript:
+    <onsubmit="this.reset();">
+- Assim: envia os dados normalmente e depois limpa os campos na tela.
+-->
+
+<!-- 
+📌 Botão com imagem + texto
+
+Exemplo:
+<button>
+  <img src="icone.png" alt="icone">
+  Entrar
+</button>
+
+- <button> pode conter texto e elementos (como <img>).
+- A imagem aparece ao lado do texto dentro do botão.
+-->
+
+</html>
