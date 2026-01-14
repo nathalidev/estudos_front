@@ -18,9 +18,23 @@
 
     <h1>Executando Vídeo</h1>
 
-    <video>
+    <video controls poster="imagem/dev_desespero.png">
         <source src="../videos/abelhas.mp4" type="video/mp4">
         Seu navegador não suporta a tag de vídeo.
     </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SJp_znlX3Yc?si=clcKvcJd7X0TLyrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!--
+    Quando usar cada um:
+
+    Vídeo do YouTube            → iframe
+    Vídeo hospedado no servidor → tag <video>
+    Quer total controle         → tag <video>
+    Quer confiabilidade pronta  → iframe
+-->
+
+
+
 </body>
 </html>
