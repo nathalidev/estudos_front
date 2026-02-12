@@ -1,0 +1,22 @@
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+
+h1{
+    border: 3px solid orange;
+    background-color: yellow;
+    color: orange;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.box-model{
+    border: 3px solid black;
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+    margin-top: 42px;
+    
+}

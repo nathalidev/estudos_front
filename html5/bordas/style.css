@@ -1,0 +1,15 @@
+.titulo{
+    background-color: orange;
+    color: black;
+    border-bottom: 3px dotted black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.paragrafo{
+    background-color: lightblue;
+    color: black;
+    border-left: 5px solid rgb(1, 1, 116);
+    border-right: 5px solid rgb(1, 1, 116);
+    border-radius: 10px;
+}

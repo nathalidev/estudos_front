@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+}
+
+.cabecalho{
+    background-color: DodgerBlue;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-magalu{
+    margin: 0px;
+    width: 100%;
+}
+
+.compre-telefone{
+    color: white
+}
+
+.menu-navegacao{
+    text-align: center;
+}
+
+.banner{
+    background-color: purple;
+}
+
+.produtos{
+    height: auto;
+}
+
+footer{
+    background-color: DodgerBlue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
