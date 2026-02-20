@@ -40,4 +40,12 @@ footer{
     padding: 10px;
 }
 
+nav{
+    display: flex;
+}
+
+.compre-telefone{
+    margin-left: auto;
+}
+
 
