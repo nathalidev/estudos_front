@@ -23,14 +23,27 @@ a {
 
 .menu-navegacao{
     text-align: center;
+    display: flex;
+    gap: 20px;
 }
 
 .banner{
     background-color: purple;
 }
 
+.botao-menu{
+    background-color: rgb(17, 105, 192);
+    border: solid 1px rgb(6, 60, 114);
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    height: 25px;   
+}
+
 .produtos{
     height: auto;
+    padding: 0 15px;
 }
 
 footer{
@@ -38,6 +51,12 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: 20px;
+}
+
+.img-produtos{
+    display: flex;
+    justify-content: center;
 }
 
 nav{
