@@ -27,8 +27,9 @@ a {
     gap: 20px;
 }
 
-.banner{
+#area-promocao{
     background-color: purple;
+    width: 100%;
 }
 
 .botao-menu{
@@ -41,10 +42,18 @@ a {
     height: 25px;   
 }
 
-.produtos{
+.produtos, .destaques-section{
     height: auto;
-    padding: 0 15px;
+    width: 90%;
+    margin: 0 auto;
 }
+
+#promocao{
+    height: auto;
+    width: 65%;
+    margin: 0 auto;
+}
+
 
 footer{
     background-color: DodgerBlue;
