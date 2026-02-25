@@ -1,5 +1,45 @@
-#header{
-    display: inline-block;
-    width: 100%;
-    height: 500px;
+body{
+    margin: 0;
+    background-color: rgb(0, 5, 20);
+    color: white;
 }
+
+.banner{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-top: 7px groove #034f84;
+    border-bottom: 7px groove #034f84;
+    height: 40px;
+}
+
+#logo{
+    width: 65px;
+}
+
+#titulo_produto{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-style: oblique;
+    letter-spacing: 2px;
+    text-shadow: 10px 10px 10px black;
+}
+
+#chuteira1{
+    padding: 20px;
+}
+
+#descricao{
+    background-color: rgb(1, 9, 34);
+    display: flex;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+.descricao-text{
+    display: inline;
+}
+
+
+
