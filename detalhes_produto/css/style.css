@@ -15,6 +15,7 @@ body{
 
 #logo{
     width: 65px;
+    background:radial-gradient(circle, rgb(223, 223, 223) 0%,  rgb(255, 255, 255) 35%);
 }
 
 #titulo_produto{
@@ -29,16 +30,102 @@ body{
     padding: 20px;
 }
 
-#descricao{
+.descricao{
     background-color: rgb(1, 9, 34);
     display: flex;
     align-items: center;
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
+    margin-bottom: 60px;
 }
 
-.descricao-text{
-    display: inline;
+#descricao-texto{
+    background-color:#034f84;
+    border-radius: 10px 0 0 10px; 
+    border: 10px outset #cfcfcf;
+}
+
+blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    color: rgb(0, 5, 20);
+    text-align: left;
+    margin: 0 20px 0 20px;
+}
+
+#depoimento{
+    background-color:  rgba(252, 252, 252, 0.911);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 65%;
+    height: 100%;
+}
+
+.descricao-paragrafo{
+    padding-left: 20px;
+}
+
+.galeria{
+    display: flex;
+    align-items: center; /* centraliza verticalmente os filhos */
+    margin: 20px 0 60px 0;
+    height: 300px;
+}
+
+.chuteira2{
+    background:radial-gradient(circle, rgb(0, 0, 0) 0%,  rgb(0, 5, 20) 50%);
+}
+
+.depoimento-imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 5, 20);
+    height: 100%;
+    justify-content: center;
+    width: 35%;
+}
+#btn-comprar{
+    background-color: #034f84;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 999px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(201, 198, 198, 0.15);
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(1, 9, 34);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#principal{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    margin-bottom: 60px;
+}
+
+#central{
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+#central2{
+    background-color: white;
 }
 
 
