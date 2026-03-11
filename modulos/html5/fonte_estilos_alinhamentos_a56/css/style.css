@@ -1,0 +1,48 @@
+body {
+    font-size: 1.5em; /*se eu usar em no body não seria igual a rem ja que vai ser usado o font-size do html como base */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.negrito {
+    /* bold, normal, 100 até 900 */
+    font-weight: bold;
+}
+
+.estilo{
+    /* normal, italic, oblique */
+    font-style: italic;
+}
+
+.transformacao {
+    /* uppercase, lowercase, capitalize */
+    text-transform: uppercase;
+}
+
+.decoracao {
+    /* none, underline, overline, line-through */
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none; /* para tirar a linha do link */
+}
+
+.entrelinhas{
+    border: 1px solid red;
+    line-height: 3em; /* para aumentar o espaçamento entre as linhas */
+}
+
+.espacamento {
+    letter-spacing: 0.5em; /* para aumentar o espaçamento entre as letras */
+    /* caso o letter seja negativo, ele vai diminuir o espaçamento entre as letras */
+    word-spacing: 2em; /* para aumentar o espaçamento entre as palavras */
+}
+
+.recuado{
+    text-indent: 2em;
+}
+
+.alinhamento {
+    text-align: justify; /* left, center, right, justify */
+    /* justify → espalha as palavras para alinhar nos dois lados */
+}
