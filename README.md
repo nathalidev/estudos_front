@@ -17,3 +17,22 @@
 - Documentar aprendizados e boas práticas
 - Evoluir até frameworks modernos
 
+## Estrutura de pastas
+
+```text
+estudos_front/
+	assets-compartilhados/
+		css/
+		img/
+		js/
+	modulos/
+		html5/
+	projetos/
+		detalhes-produto/
+```
+
+### Como está organizado
+- `assets-compartilhados/`: arquivos reutilizados entre exercícios.
+- `modulos/html5/`: aulas e exercícios do módulo de HTML.
+- `projetos/detalhes-produto/`: mini projeto isolado com assets próprios.
+
