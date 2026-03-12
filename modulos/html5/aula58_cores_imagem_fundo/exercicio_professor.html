@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo</title>
+
+    <style>
+
+        .caixa {
+            width: 700px;
+            height: 300px;
+            border: 3px dotted red;
+            /*
+            background-color: lightgreen;
+            background-image: url('img/fundo-css-escuro.png');*/
+
+            /* 
+            repeat -> é repetida horizontal e vertical
+            repeat-x -> é repetida na horizontal
+            repeat-y -> é repetida na vertical
+            no-repeat -> imagem é exibida apenas uma vez
+            
+            background-repeat: no-repeat;*/
+
+            /* 
+            fixed -> a imagem de fundo permanece na mesma posição na página
+            scrool -> a imagem de fundo move-se com o 
+            conteúdo quando o usuário rola a página
+            
+            background-attachment: scrool;*/
+
+            /*
+            Quando a imagem não é repetida, você pode posicionar a imagem
+            horizontal: left, center, right
+            vertical: top, center bottom
+            * Necessário escolher dois valores, 
+            senão será utilizado center como segundo valor
+            
+            background-position: right center;
+            background-position-x: right;
+            background-position-y: bottom;
+            
+            */
+
+            /*
+            Todas as propriedades resumidas
+            ordem: cor, imagem, repeat, attachment, position
+            
+            background: lightgreen 
+                        url('img/fundo-css-escuro.png')
+                        no-repeat
+                        scroll
+                        left;*/
+            background: 
+                url('img/fundo-css-claro.png') no-repeat right bottom,
+                url('img/fundo-css-escuro.png') no-repeat right top;
+            
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="caixa">
+        <h1>Título do texto</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Porro minus explicabo magnam dolorum, odit voluptas, 
+            perspiciatis vitae reprehenderit cum, eveniet incidunt 
+            rem asperiores nulla enim facere at obcaecati tempore 
+            accusantium?
+        </p>
+    </div>
+    
+</body>
+</html>
