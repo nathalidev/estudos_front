@@ -17,8 +17,16 @@ h1{
     padding-left: 1rem;
 }
 
+h2 {
+    color: #7a786a;
+}
+
 #conteudo{
     margin-left: 1rem;
     margin-right: 1rem;
+    background-image: url('./img/fundo-h2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
