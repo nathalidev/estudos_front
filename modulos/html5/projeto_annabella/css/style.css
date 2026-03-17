@@ -3,7 +3,7 @@ html{
 }
 
 .capa{
-    border: 8px inset #ffffff;
+    border: 5px ridge #ffffff;
     width: 100%;
     height: 70vh;
     box-sizing: border-box;
