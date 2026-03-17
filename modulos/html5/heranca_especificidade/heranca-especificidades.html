@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança e especificidade</title>
+
+    <style>
+        
+        /* Herança 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+            border: 1px solid red;
+            padding: 3em;
+            margin: 2em;
+        }
+
+        h1 {
+            color: violet;
+            border: inherit;
+            font-size: inherit;
+        }
+
+        p {
+            
+        }*/
+
+        /* Especificidade 
+        é a maneira de como os navegadores definem quais 
+        valores de propriedades são os mais relevantes 
+        para o elemento a ser utilizado. A Especificidade é 
+        baseada apenas nas regras impostas na composição de 
+        diferentes tipos de seletores.
+        
+        calculadora: https://specificity.keegan.st/
+
+        Ordem de aplicação das formatações:
+         1. Regra com !important
+         2. Seletores mais específicos
+         3. Última regra processada
+        
+        p {
+            color: blueviolet; !important 
+        }
+
+        p {
+            color: red;
+        }
+
+        p[id] {
+            border: 1px solid red;
+        }*/
+
+
+        /* PARTE 2 
+        Seletores mais específicos:
+        1) Estilo em linha (inline style)
+        2) IDs
+        3) Classes, atributos e pseudo-classes
+        4) Elementos e pseudo-elementos
+        */
+        /*
+        .promocao {
+            color: hotpink;
+        }
+
+        #paragrafo {
+            color: purple;
+        }*/
+        p {
+            color: yellow;
+        }
+
+        .destaque {
+            color: green;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Título</h1>
+    <p class="destaque">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aspernatur asperiores, recusandae doloribus velit qui 
+        magnam officia enim maxime dicta dolor aliquam voluptate 
+        tempore, facilis vero dignissimos odio repellat neque 
+        perspiciatis?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aspernatur asperiores, recusandae doloribus velit qui 
+        magnam officia enim maxime dicta dolor aliquam voluptate 
+        tempore, facilis vero dignissimos odio repellat neque 
+        perspiciatis?
+    </p>
+
+    <span>Texto</span>
+    
+</body>
+</html>
