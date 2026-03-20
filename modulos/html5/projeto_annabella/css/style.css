@@ -6,6 +6,10 @@ html{
 
 }
 
+*{
+    box-sizing: border-box;
+}
+
 @font-face{
     font-family: 'FonteNav';
     src: url('../fonts/Qafinte.otf') format('truetype');
@@ -25,10 +29,23 @@ html{
     height: 100%;
     background: linear-gradient(90deg, rgba(85, 82, 72, 0.8), rgba(224, 222, 218, 0.8));
     padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 a{
     text-decoration: none;
     color:#b0ff82;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 5px;
+    width: 100%;
+}
+
+#overlay{
+    background-color: rgba(184, 182, 179, 0.8);
+    padding: 20px 10px;
 }
 
