@@ -53,8 +53,40 @@ a{
     height: 18rem;
 }
 
+figure {
+    display: inline-block;
+}
+
+.texto-com-imagem{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.texto-com-imagem .inline{
+    flex: 1 1 320px;
+    margin: 0;
+}
+
+.texto-com-imagem figure{
+    width: fit-content;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
 figcaption{
     text-align: center;
     font-size: 0.9rem;
     color: #000000;
+}
+
+.inline{
+    display: inline;
+}
+
+@media (max-width: 768px){
+    .texto-com-imagem{
+        flex-direction: column;
+    }
 }
