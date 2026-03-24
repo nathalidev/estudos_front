@@ -1,7 +1,6 @@
 html{
     background: linear-gradient(90deg, #8f8a79, #cac7be);
     background-image: url('../img/fundo.png');
-    background-size: cover;
     font-family: 'FonteNav', sans-serif;
 
 }
@@ -49,3 +48,13 @@ a{
     padding: 20px 10px;
 }
 
+#foto1{
+    width: 22rem;
+    height: 18rem;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 0.9rem;
+    color: #000000;
+}
