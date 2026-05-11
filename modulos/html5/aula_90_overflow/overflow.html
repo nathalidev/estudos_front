@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow e dimensões de caixa</title>
+
+    <style>
+
+        .caixa {
+            /*width: 600px;
+            height: 300px;
+            min-width: 400px; Largura mínima 
+            max-width: 600px; largura máxima 
+            min-height: 200px;
+            */
+            width: 600px;
+            height: 300px;
+            border: 1px solid red;
+            background-color: lightgrey;
+            /* 
+            visible: Exibe o conteúdo de forma vazada, 
+            fora da caixa de conteúdo 
+            hidden:  Esconde o conteúdo excedente
+            scroll:  Sempre exibe barras de rolagem
+            auto: adiciona scroll somente se necessário
+            
+            overflow: scroll;*/
+            overflow-x: hidden;/* HOrizontal */
+            overflow-y: auto;/* vertical */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="caixa">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quam sit distinctio voluptates ducimus accusamus, 
+            cupiditate et excepturi, commodi aspernatur iusto 
+            dolores. Adipisci, illo ea. Cumque laboriosam nihil 
+            recusandae voluptatibus beatae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quam sit distinctio voluptates ducimus accusamus, 
+            cupiditate et excepturi, commodi aspernatur iusto 
+            dolores. Adipisci, illo ea. Cumque laboriosam nihil 
+            recusandae voluptatibus beatae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quam sit distinctio voluptates ducimus accusamus, 
+            cupiditate et excepturi, commodi aspernatur iusto 
+            dolores. Adipisci, illo ea. Cumque laboriosam nihil 
+            recusandae voluptatibus beatae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quam sit distinctio voluptates ducimus accusamus, 
+            cupiditate et excepturi, commodi aspernatur iusto 
+            dolores. Adipisci, illo ea. Cumque laboriosam nihil 
+            recusandae voluptatibus beatae.
+        </p>
+        <p>
+            JAMILTON Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quam sit distinctio voluptates ducimus accusamus, 
+            cupiditate et excepturi, commodi aspernatur iusto 
+            dolores. Adipisci, illo ea. Cumque laboriosam nihil 
+            recusandae voluptatibus beatae.
+        </p>
+    </div>
+    
+</body>
+</html>
