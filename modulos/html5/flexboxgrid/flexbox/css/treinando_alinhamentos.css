@@ -1,0 +1,56 @@
+/* Estilo base de todas as caixas */
+.caixa {
+    display: flex;
+    width: 320px;
+    height: 260px;
+    border: 2px solid #73ff00;
+    margin-bottom: 24px;
+}
+
+/* Itens com alturas diferentes, para você ver o alinhamento acontecer */
+.item {
+    width: 60px;
+    margin: 4px;
+    background: #4a90e2;
+    color: white;
+    font: bold 14px sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ff008c;
+}
+
+/* ===== CAIXA A: row + nowrap ===== */
+.a {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;  /* experimente: center, flex-end, space-between */
+    align-items: center;      /* experimente: center, flex-end, stretch */
+    align-content: flex-start;    /* experimente: center, flex-end, space-between */
+}
+
+/* ===== CAIXA B: row + wrap ===== */
+.b {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;  /* experimente: center, flex-end, space-between */
+    align-items: center;      /* experimente: center, flex-end, stretch */
+    align-content: flex-end;
+    border: 2px solid rgb(0, 217, 255);    /* experimente: center, flex-end, space-between */
+}
+
+/* ===== CAIXA C: column + wrap ===== */
+.c {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;  /* experimente: center, flex-end, space-between */
+    align-items: flex-start;      /* experimente: center, flex-end, stretch */
+    align-content: flex-start;    /* experimente: center, flex-end, space-between */
+}
+
+/* * align-content só existe por causa do wrap. O align-items existe sempre.
+    * O align-items trabalha dentro de uma linha. Todo container flex tem pelo menos uma linha, mesmo sem wrap, então ele sempre tem onde atuar.
+    * O align-content trabalha entre linhas. Sem wrap, não existe “entre”, porque há uma linha só. Ele não tem o que alinhar.
+    * O align-items perde o efeito se tenho wrap e todos os itens tem a mesma altura, ai só o align-content vai ter efeito. Se os itens tem alturas diferentes, o align-items vai ter efeito e o align-content também.
+    *
+*/
