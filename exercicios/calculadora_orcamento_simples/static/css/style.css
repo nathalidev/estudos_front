@@ -1,0 +1,79 @@
+:root {
+	/* Cores */
+	--cor-fundo: #031535;
+	--cor-fundo-hover: #010918;
+	--cor-borda: rgb(197, 193, 193);
+	--cor-borda-hover: rgb(243, 243, 243);
+
+	/* Variáveis convertidas para REM */
+	--fonte-principal: "Arvo", serif;
+	--raio-grande: 1.25rem;          /* 20px / 16 = 1.25rem */
+	--raio-pequeno: 0.3125rem;       /* 5px / 16 = 0.3125rem */
+	--padding-padrao: 1.25rem;       /* 20px / 16 = 1.25rem */
+	--padding-botao: 0.625rem;        /* 10px / 16 = 0.625rem */
+	--gap-principal: 1.5625rem;      /* 25px / 16 = 1.5625rem */
+
+	/* Sombras adaptadas com REM */
+	--cor-sombra: rgba(0, 0, 0, 0.089);
+	--sombra-form: 0.625rem 0.625rem var(--cor-sombra); /* 10px 10px */
+	--sombra-hover: 0.1875rem 0.1875rem var(--cor-sombra); /* 3px 3px */
+}
+
+form {
+	border: 3px outset black; /* Mantido em px por ser um estilo clássico rígido */
+	border-radius: var(--raio-grande);
+	box-shadow: var(--sombra-form);
+	font-family: var(--fonte-principal);
+	background-color: var(--cor-fundo);
+}
+
+fieldset {
+	border-radius: var(--raio-grande);
+}
+
+input:hover {
+	background-color: var(--cor-borda-hover);
+	box-shadow: var(--sombra-hover);
+}
+
+input,
+button {
+	font-family: inherit;
+}
+
+input {
+	border-radius: var(--raio-pequeno);
+	border: 1px solid var(--cor-borda); /* Mantido em 1px para não sumir/ficar grossa */
+}
+
+#div-titulo {
+	color: white;
+	padding: var(--padding-padrao);
+}
+
+#conteudo-principal {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-principal);
+	padding: var(--padding-padrao);
+	background-color: white;
+	border-radius: var(--raio-grande);
+}
+
+#botoes {
+	display: flex;
+	gap: 3%; /* Mantido em % por ser uma divisão fluida de layout */
+}
+
+button {
+	color: white;
+	background-color: var(--cor-fundo);
+	border: none;
+	border-radius: var(--raio-grande);
+	padding: var(--padding-botao);
+}
+
+button:hover {
+	background-color: var(--cor-fundo-hover);
+	box-shadow: var(--sombra-hover);
+}
