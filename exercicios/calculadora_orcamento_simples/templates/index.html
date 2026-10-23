@@ -13,11 +13,11 @@
 </head>
 <body>
     <main>
-        <form action="/orcamento" method="POST">
-                <div id="div-titulo">
+        <form action="/calcular" method="POST">
+                <div class="div-titulo">
                     <legend>Calculadora de Orçamento</legend>
                 </div>
-                <div id="conteudo-principal">
+                <div class="conteudo-principal">
                     <div>
                         <label for="nome_cliente">Nome do cliente:</label>
                         <input type="text" id="nome_cliente" name="nome_cliente" required>
@@ -34,8 +34,8 @@
                     </div>
     
                     <div>
-                        <label for="despesas">Desconto(%):</label>
-                        <input type="number" id="despesas" name="despesas" max="20" required>
+                        <label for="desconto">Desconto(%):</label>
+                        <input type="number" id="desconto" name="desconto" max="20" required>
                     </div>
                     <div id="botoes">
                         <button type="submit">Calcular</button>
@@ -43,6 +43,22 @@
                     </div>
                 </div>
         </form>
+        <div id="resultado">
+            <div class="conteudo-principal">
+                <h2>Resultado:</h2>
+            </div>
+            <div class="div-titulo">
+                {% if not erro %}
+                    <p><strong>{{nome_cliente}}</strong></p>
+                    <p>Valor bruto: R$ {{valor_bruto}}</p>
+                    <p>Valor líquido: R$ {{valor_liquido}}</p>
+                    <p>Desconto: R$ {{desconto}}</p>
+                    <p>Horas trabalhadas: {{horas_trabalhadas}}</p>
+                {% else %}
+                    <p style="color: red;">Erro: {{ erro }}</p>
+                {% endif %}
+            </div>
+        </div>
     </main>
 </body>
 </html>

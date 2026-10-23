@@ -19,12 +19,13 @@
 	--sombra-hover: 0.1875rem 0.1875rem var(--cor-sombra); /* 3px 3px */
 }
 
-form {
+form, #resultado {
 	border: 3px outset black; /* Mantido em px por ser um estilo clássico rígido */
 	border-radius: var(--raio-grande);
 	box-shadow: var(--sombra-form);
 	font-family: var(--fonte-principal);
 	background-color: var(--cor-fundo);
+    margin: var(--raio-grande); 
 }
 
 fieldset {
@@ -46,12 +47,12 @@ input {
 	border: 1px solid var(--cor-borda); /* Mantido em 1px para não sumir/ficar grossa */
 }
 
-#div-titulo {
+.div-titulo {
 	color: white;
 	padding: var(--padding-padrao);
 }
 
-#conteudo-principal {
+.conteudo-principal {
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-principal);
@@ -77,3 +78,4 @@ button:hover {
 	background-color: var(--cor-fundo-hover);
 	box-shadow: var(--sombra-hover);
 }
+
