@@ -25,12 +25,17 @@
     
                     <div>
                         <label for="horas_trabalhadas">Horas trabalhadas:</label>
-                        <input type="number" id="horas_trabalhadas" name="horas_trabalhadas" min="0" required>
+                        <input type="number" id="horas_trabalhadas" name="horas_trabalhadas" min="0" step="1" required>
+                    </div>
+
+                    <div>
+                        <label for="minutos_trabalhados">Minutos trabalhados:</label>
+                        <input type="number" id="minutos_trabalhados" name="minutos_trabalhados" min="0" max="59" step="1" required>
                     </div>
     
                     <div>
                         <label for="valor_hora">Valor por hora:</label>
-                        <input type="number" id="valor_hora" name="valor_hora" min="0" required>
+                        <input type="number" id="valor_hora" name="valor_hora" min="0" step="0.01" placeholder="0.00 - Digite dessa forma substituindo a ',' por '.'" required>
                     </div>
     
                     <div>
@@ -44,16 +49,16 @@
                 </div>
         </form>
         <div id="resultado">
-            <div class="conteudo-principal">
-                <h2>Resultado:</h2>
-            </div>
             <div class="div-titulo">
+                <h3>Resultado:</h3>
+            </div>
+            <div class="conteudo-principal">
                 {% if not erro %}
                     <p><strong>{{nome_cliente}}</strong></p>
                     <p>Valor bruto: R$ {{valor_bruto}}</p>
                     <p>Valor líquido: R$ {{valor_liquido}}</p>
                     <p>Desconto: R$ {{desconto}}</p>
-                    <p>Horas trabalhadas: {{horas_trabalhadas}}</p>
+                    <p>Horas trabalhadas: {{horas_trabalhadas_formatadas}}</p>
                 {% else %}
                     <p style="color: red;">Erro: {{ erro }}</p>
                 {% endif %}
